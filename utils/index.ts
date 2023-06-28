@@ -1,7 +1,7 @@
 export async function fetchCars() {
     const headers = {
-        'X-RapidAPI-Key': '5e699fbf73msh7108c5393c41b5bp17a2b9jsnffec55cb314b',
-        'X-RapidAPI-Host': 'cars-by-api-ninjas.p.rapidapi.com'
+        'X-RapidAPI-Key': process.env.NEXT_PUBLIC_KEY,
+        'X-RapidAPI-Host': process.env.NEXT_PUBLIC_HOST
     }
 
     const response = await fetch('https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=corolla', {headers: headers});
@@ -33,12 +33,30 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Asli
+
 // const url = 'https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=corolla';
 // const options = {
 // 	method: 'GET',
 // 	headers: {
-// 		'X-RapidAPI-Key': '5e699fbf73msh7108c5393c41b5bp17a2b9jsnffec55cb314b',
-// 		'X-RapidAPI-Host': 'cars-by-api-ninjas.p.rapidapi.com'
+// 		'X-RapidAPI-Key': '',
+// 		'X-RapidAPI-Host': ''
 // 	}
 // };
 
